@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+/* --------HEADER--------*/
+
+.header {
+    background-color: black;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-title {
+    font-family: "ultra";
+    font-size: 1.3rem;
+    text-align: left;
+    color: white;
+    font-weight: 100;
+}
+
+.header-form {
+    display: none;
+}
+
+/* -------Body--------- */
+
+/* --------Carrusel--------*/
+
+.carousel-inner {
+    height: 250px;
+}
+
+
+@font-face {
+    font-family: "notoserif";
+    src: url("../fonts/notoseriflao.ttf");
+}
+
+body {
+    font-family: "notoserif";
+    font-weight: 500;
+    background-color: #530110f5;
+}
+
+.section-article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.title-article {
+    color: white;
+    font-family: "notoserif";
+    font-weight: 600;
+    font-size: 1.7rem;
+    padding: 1em;
+    
+}
+
+
+
+.offcanvas-header {
+    background-color: rgba(0, 0, 0, 0.645);
+}
+
+ .article-parrafo {
+    text-align: justify;
+    padding: 1px 15px;
+    color: white;
+    font-weight: 300;
+}
+
+.article-figure {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.article-img {
+    width: 92vw;
+    
+
+}
+
+.article-video {
+    width: 92vw;
+}
+
+/* ------------ footer --------------*/
+
+.footer {
+    background-color: rgba(0, 0, 0, 0.889);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+.title-footer { 
+    color: white;
+    font-family: "notoserif";
+    font-weight: 600;
+    font-size: 1.7rem;
+    padding: 10px;
+    
+
+}
+
+.iconos-footer {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 5px 30px;
+    
+    
+}
+
+.iconos {
+    font-size: 27px;
+    color: rgb(7, 112, 91);
+   
+}
+
+.padre-mapa-footer {
+    display: flex;
+    justify-content: center;
+}
+
+.mapa-footer {
+    width: 60vw;
+    height: 20vh;
+}
+
+.title-maps-footer {
+    color: white;
+    padding: 5px;
+}
+
+
+.linea-footer {
+    color: white;
+    width: 90vw;
+   
+}
+
+.contact-footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.lista-footer {
+    color: white;
+    
+}
+
+
+@media (min-width:600px) and (max-width: 1024px)
