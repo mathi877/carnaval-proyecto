@@ -42,7 +42,9 @@ ol {
 
 .carousel-inner {
     height: 250px;
+    
 }
+
 
 
 @font-face {
@@ -100,6 +102,8 @@ body {
 .article-video {
     width: 92vw;
 }
+
+
 
 
 /* ------------ footer --------------*/
@@ -173,4 +177,44 @@ body {
 }
 
 
-@media (min-width:600px) and (max-width: 1024px)
+@media (min-width:600px)   {
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    
+    }
+
+    .carousel {
+        border: 150px solid rgb(0, 0, 0);
+        border-bottom: none;
+        border-top: none;
+        
+    }
+
+    .carousel-inner {
+        height: 60vh;
+        justify-content: center;
+        object-fit: cover;
+        
+    }
+  
+    .carousel-item {
+        
+      
+        
+        
+        
+        
+        
+    }
+    
+  
+
+}
+
+  
+
+
+
