@@ -42,7 +42,7 @@ ol {
 
 .carousel-inner {
     height: 250px;
-    
+
 }
 
 
@@ -71,7 +71,7 @@ body {
     font-weight: 600;
     font-size: 1.7rem;
     padding: 1em;
-    
+
 }
 
 
@@ -80,7 +80,7 @@ body {
     background-color: rgba(0, 0, 0, 0.645);
 }
 
- .article-parrafo {
+.article-parrafo {
     text-align: justify;
     padding: 1px 15px;
     color: white;
@@ -90,17 +90,101 @@ body {
 .article-figure {
     display: flex;
     justify-content: center;
-    
+
 }
 
 .article-img {
     width: 92vw;
-    
+
 
 }
 
 .article-video {
     width: 92vw;
+}
+
+/*----Tarjetas----*/
+
+.article-aside {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    
+    margin: 0;
+    padding-left: 10px;
+
+
+
+
+}
+
+.title-aside {
+    color: white;
+    font-family: "notoserif";
+    font-weight: 600;
+    font-size: 1.7rem;
+    padding-top: 1.5em;
+    padding-bottom: 0.5em;
+    width: 300px;
+    line-height: 37px;
+    align-self: center;
+
+
+
+
+}
+
+.tarjeta {
+    display: flex;
+    flex-direction: column;
+    height: 340px;
+    width: 60vw;
+    border: 2px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    
+    margin-bottom: 20px;
+    align-self: center;
+
+    background-color: rgb(175, 172, 163);
+
+
+
+}
+
+.tarjeta__img {
+    width: 59.9vw;
+
+    height: 30vh;
+    background-size: contain;
+
+
+
+}
+
+.tarjeta__img3 {
+    width: 55vwvw;
+
+    height: 27vh;
+    background-size: contain;
+
+
+
+}
+
+
+
+.tarjeta__title {
+
+
+    font-size: 1.4rem;
+    color: rgb(1, 13, 13);
+    font-family: "notoserif";
+    font-weight: 400;
+    padding: 0.5em 1.2em;
+
+
 }
 
 
@@ -109,21 +193,31 @@ body {
 /* ------------ footer --------------*/
 
 .footer {
-    background-color: rgba(0, 0, 0, 0.889);
+    background-color: black;
     padding: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
-   
+    gap: 15px;
+
 }
 
-.title-footer { 
+.footer-title {
+    padding: 0;
+    margin: 0;
+    font-size: 0;
+    
+}
+
+.title-iconos {
     color: white;
     font-family: "notoserif";
     font-weight: 600;
     font-size: 1.7rem;
     padding: 10px;
-    
+    display: flex;
+    justify-content: center;
+
 
 }
 
@@ -132,24 +226,21 @@ body {
     justify-content: center;
     gap: 50px;
     padding: 5px 30px;
-    
-    
+
+
 }
 
 .iconos {
     font-size: 27px;
     color: rgb(7, 112, 91);
-   
+
 }
 
-.padre-mapa-footer {
+.contenedor-maps {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-}
-
-.mapa-footer {
-    width: 60vw;
-    height: 20vh;
+    align-items: center;
 }
 
 .title-maps-footer {
@@ -157,47 +248,66 @@ body {
     padding: 5px;
 }
 
+.mapa-footer {
+    width: 60vw;
+    height: 20vh;
+    
+}
 
-.linea-footer {
+.separador-footer {
+    background-color: black;
+    width: 100vw;
+    padding-left: 20px;
+    margin: 0;
+}
+
+
+.linea-footer{
     color: white;
     width: 90vw;
-   
+    margin: 0;
+
 }
 
 .contact-footer {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 5px;
+    width: 90vw;
+    padding-bottom: 20px;
+    padding-top: 20px ;
+    padding-left: 0;
+    margin: 0;
+    gap: 15px;
 }
 
 .lista-footer {
     color: white;
-    
+
 }
 
 
-@media (min-width:600px)   {
+@media (min-width:600px) {
 
     * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-    
+
     }
 
     .carousel {
         border: 150px solid rgb(0, 0, 0);
         border-bottom: none;
         border-top: none;
-        
+
     }
 
     .carousel-inner {
         height: 60vh;
         justify-content: center;
         object-fit: cover;
-        
+
     }
 
     /* -------- Carrusel --------*/
@@ -206,8 +316,8 @@ body {
 
     .main {
         width: 1000px;
-   }
-    
+    }
+
     .section-article {
         width: 870px;
         display: inline-block;
@@ -216,7 +326,20 @@ body {
         padding: 20px;
     }
 
-  
+    
+
+    .article-figure {
+       
+        
+        
+        
+
+        
+    }
+
+    
+
+
 
     /* -----------*/
 
@@ -237,20 +360,27 @@ body {
         display: flex;
         justify-content: center;
         flex-direction: column;
-       
-       
+        text-align: center;
+        width: 300px;
+
+
+
+
     }
 
     .title-aside {
-         color: white;
-         font-family: "notoserif";
-         font-weight: 600;
-         font-size: 1.7rem;
-         padding: 1em;
-         width: 60px;
-         
-         
-        
+        color: white;
+        font-family: "notoserif";
+        font-weight: 600;
+        font-size: 1.7rem;
+        padding-top: 1.5em;
+        padding-bottom: 0.5em;
+        width: 300px;
+        line-height: 37px;
+
+
+
+
     }
 
     .tarjeta {
@@ -263,50 +393,144 @@ body {
         overflow: hidden;
         margin-left: 15px;
         margin-bottom: 20px;
-        bottom: 0;
+
         background-color: rgb(175, 172, 163);
-        
-        
+
+
 
     }
 
     .tarjeta__img {
-         width: 21.7vw;
-         justify-content: center;
-         height: 30vh;
-         background-size: contain;
-         
-    
+        width: 21.7vw;
 
-}
-     
-     .tarjeta__title {
-          
-        align-self: center;
+        height: 30vh;
+        background-size: contain;
+
+
+
+    }
+
+    .tarjeta__img3 {
+        width: 21.7vw;
+
+        height: 27vh;
+        background-size: contain;
+
+
+
+    }
+
+
+
+    .tarjeta__title {
+
+
         font-size: 1.4rem;
         color: rgb(1, 13, 13);
         font-family: "notoserif";
         font-weight: 400;
         padding: 0.5em 1.2em;
-        justify-content: center;
+
+
     }
-    
+
     /*----Tarjetas----*/
 
     /*------aside------*/
-    
 
-     aside {
+
+    aside {
         display: inline-block;
         width: 110px;
         height: 400px;
         float: right;
+    }
+        
+      /*------Footer-------*/
+        
+      .contenedor-footer {
+        width: 100vw;
+      } 
+
+      .footer {
+        display: flex;
+        justify-content:space-between ;
+        flex-direction: row;
+        gap: 100px;
+        width: 100vw;
+        align-items: start;
+        padding-top: 30px;
+        
+        
+      }
+
+       
+
+      .footer-title {
+        font-family: "ultra";
+        font-size: 1.5rem;
+        text-align: left;
+        color: white;
+        font-weight: 100;
+       
+        
+
+        
+    }
+    .contenedor-contactos {
+           align-items: start;
+           
+    }
+    
+     .title-iconos {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-bottom: 10px;
+        color: white;
      }
-  
 
+    .contenedor-maps {
+        flex-direction: column;
+        padding-right: 20px;
+    }
+
+    .title-maps-footer {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .mapa-footer {
+        width: 20vw;
+        
+        
+    }
+     
+    .separador-footer {
+        display: inline-block;
+    }
+
+    .linea-footer {
+       width: 97vw;
+        margin: 0;
+        
+    }
+
+    .contact-footer {
+        background-color: black;
+        flex-direction: row;
+        gap: 30px;
+        padding-left: 15px;
+        margin: 0;
+        
+    }
+
+    .linea-footer {
+        display: flex;
+        
+        
+    }
+
+   
 }
-
-  
-
-
-
