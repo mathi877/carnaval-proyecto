@@ -58,21 +58,17 @@ body {
     background-color: #530110f5;
 }
 
-.section-article {
+.section-parodistas {
     display: flex;
     flex-direction: column;
     align-items: center;
+    
+    
+    
+    
 }
 
 
-.title-article {
-    color: white;
-    font-family: "notoserif";
-    font-weight: 600;
-    font-size: 1.7rem;
-    padding: 1em;
-
-}
 
 
 
@@ -93,6 +89,7 @@ body {
 
 }
 
+
 .article-img {
     width: 92vw;
 
@@ -102,6 +99,50 @@ body {
 .article-video {
     width: 92vw;
 }
+
+
+ 
+
+
+/*-----Segundo Carrusel------*/
+/*
+.section-article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 35px;
+    
+    
+}
+
+.d-block {
+    height: 300px;
+}
+
+.title-article {
+    color: white;
+    font-family: "notoserif";
+    font-weight: 600;
+    font-size: 1.7rem;
+    padding: 1em;
+    
+    
+
+}
+
+
+
+
+
+
+.title-carrusel {
+    font-size: 1.2rem;
+    color: white;
+}
+
+*/
+
+
 
 /*----Tarjetas----*/
 
@@ -138,7 +179,7 @@ body {
 .tarjeta {
     display: flex;
     flex-direction: column;
-    height: 340px;
+    height: 360px;
     width: 60vw;
     border: 2px solid black;
     border-radius: 10px;
@@ -287,7 +328,7 @@ body {
 }
 
 
-@media (min-width:600px) {
+@media (min-width:600px)  {
 
     * {
         margin: 0;
@@ -328,17 +369,6 @@ body {
 
     
 
-    .article-figure {
-       
-        
-        
-        
-
-        
-    }
-
-    
-
 
 
     /* -----------*/
@@ -346,8 +376,8 @@ body {
     /*----edicion de imagenes-----*/
 
     .article-img {
-        width: 70vw;
-        padding: 20px;
+        width: 50vw;
+        
     }
 
     .article-video {
@@ -377,7 +407,7 @@ body {
         padding-bottom: 0.5em;
         width: 300px;
         line-height: 37px;
-
+        
 
 
 
@@ -386,13 +416,14 @@ body {
     .tarjeta {
         display: flex;
         flex-direction: column;
-        height: 340px;
-        width: 22vw;
+        height: 360px;
+        width: 270px;
         border: 2px solid black;
         border-radius: 10px;
         overflow: hidden;
         margin-left: 15px;
         margin-bottom: 20px;
+        
 
         background-color: rgb(175, 172, 163);
 
