@@ -1,0 +1,157 @@
+.footer {
+    background-color: $color-fondo;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+
+    @include mobile-lg {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        gap: 100px;
+        width: 100vw;
+        align-items: start;
+        padding-top: 30px;
+    }
+
+    &-title {
+        padding: 0;
+        margin: 0;
+        font-size: 0;
+
+        @include mobile-lg {
+            font-family: "ultra";
+            font-size: 1.5rem;
+            text-align: left;
+            color: white;
+            font-weight: 100;
+        }
+    }
+}
+
+.contenedor-footer {
+    @include mobile-lg() {
+        width: 100vw;
+    }
+}
+
+.contenedor-contactos {
+    @include mobile-lg {
+        align-items: start;
+    }
+}
+
+.iconos-title {
+    color: $color-text;
+    font-family: "notoserif";
+    font-weight: 600;
+    font-size: 1.7rem;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+
+    @include mobile-lg {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-bottom: 10px;
+        color: white;
+    }
+}
+
+.iconos-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 5px 30px;
+}
+
+.iconos {
+    font-size: 27px;
+    color: rgb(7, 112, 91);
+}
+
+/*-----MAPA------*/
+
+.mapa-contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include mobile-lg {
+        flex-direction: column;
+        padding-right: 20px;
+    }
+}
+
+.mapa-title {
+    color: $color-text;
+    padding: 5px;
+
+    @include mobile-lg {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+.mapa {
+    width: 60vw;
+    height: 20vh;
+
+    @include mobile-lg {
+        width: 20vw;
+    }
+}
+
+/*---------separador-------*/
+
+.linea-padre-footer {
+    background-color: $color-fondo;
+    width: 100vw;
+    padding-left: 20px;
+    margin: 0;
+
+    @include mobile-lg {
+        display: inline-block;
+    }
+}
+
+.linea-footer {
+    color: $color-text;
+    width: 90vw;
+    margin: 0;
+
+    @include mobile-lg {
+        width: 97vw;
+        margin: 0;
+        display: flex;
+    }
+}
+
+.contacto-footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 90vw;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 0;
+    margin: 0;
+    gap: 15px;
+
+    @include mobile-lg {
+        background-color: black;
+        flex-direction: row;
+        gap: 30px;
+        padding-left: 15px;
+        margin: 0;
+    }
+}
+
+.lista-footer {
+    color: $color-text;
+}

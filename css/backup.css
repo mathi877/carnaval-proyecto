@@ -250,7 +250,7 @@ body {
     
 }
 
-.title-iconos {
+.iconos-title {
     color: white;
     font-family: "notoserif";
     font-weight: 600;
@@ -262,7 +262,7 @@ body {
 
 }
 
-.iconos-footer {
+.iconos-container {
     display: flex;
     justify-content: center;
     gap: 50px;
@@ -277,25 +277,25 @@ body {
 
 }
 
-.contenedor-maps {
+.mapa-contenedor {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.title-maps-footer {
+.mapa.title {
     color: white;
     padding: 5px;
 }
 
-.mapa-footer {
+.mapa {
     width: 60vw;
     height: 20vh;
     
 }
 
-.separador-footer {
+.linea-padre-footer {
     background-color: black;
     width: 100vw;
     padding-left: 20px;
@@ -310,7 +310,7 @@ body {
 
 }
 
-.contact-footer {
+.contacto-footer {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -382,6 +382,8 @@ body {
 
     .article-video {
         width: 50vw;
+
+        
     }
 
     /*------Tarjetas-----*/

@@ -1,0 +1,25 @@
+
+.header {
+    @include flex-box(space-between, center);
+    background-color: $color-fondo;
+    padding: 10px;
+
+  &-title {
+    font-family: "ultra";
+    font-size: 1.3rem;
+    text-align: left;
+    color: white;
+    font-weight: 100;
+     }
+
+   &-form {
+    display: none;
+   }  
+}
+
+.offcanvas-header {
+    background-color: rgba(0, 0, 0, 0.645);
+}
+
+
+

@@ -1,0 +1,51 @@
+$color-primario: #530110f5;
+$color-text: white;
+$color-fondo: black;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+@font-face {
+    font-family: "notoserif";
+    src: url("../fonts/notoseriflao.ttf");
+}
+
+body {
+    font-family: "notoserif";
+    font-weight: 500;
+    background-color: #530110f5;
+}
+
+
+@mixin flex-box ($justify:center, $align:center) {
+    display:flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin mobile-lg {
+    @media (min-width: 576px) {
+        @content;
+    }
+}
+
+
+
+
+
+
+
+

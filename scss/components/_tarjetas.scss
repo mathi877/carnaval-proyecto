@@ -1,0 +1,105 @@
+.article-aside {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 0;
+    padding-left: 10px;
+
+    @include mobile-lg() {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        width: 300px;
+    }
+}
+
+.title-aside {
+    color: $color-text;
+    font-family: "notoserif";
+    font-weight: 600;
+    font-size: 1.7rem;
+    padding-top: 1.5em;
+    padding-bottom: 0.5em;
+    width: 300px;
+    line-height: 37px;
+    align-self: center;
+
+    @include mobile-lg() {
+        color: $color-text;
+        font-family: "notoserif";
+        font-weight: 600;
+        font-size: 1.7rem;
+        padding-top: 1.5em;
+        padding-bottom: 0.5em;
+        width: 300px;
+        line-height: 37px;
+    }
+}
+
+.tarjeta {
+    display: flex;
+    flex-direction: column;
+    height: 360px;
+    width: 60vw;
+    border: 2px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    align-self: center;
+    background-color: rgb(175, 172, 163);
+
+    @include mobile-lg() {
+        display: flex;
+        flex-direction: column;
+        height: 360px;
+        width: 270px;
+        border: 2px solid black;
+        border-radius: 10px;
+        overflow: hidden;
+        margin-left: 15px;
+        margin-bottom: 20px;
+        background-color: rgb(175, 172, 163);
+    }
+
+    &__img {
+        width: 59.9vw;
+        height: 30vh;
+        background-size: contain;
+
+        @include mobile-lg() {
+            width: 21.7vw;
+            height: 30vh;
+            background-size: contain;
+        }
+    }
+
+    &__img2 {
+        width: 55vw;
+        height: 27vh;
+        background-size: contain;
+
+        @include mobile-lg() {
+            width: 21.7vw;
+            height: 27vh;
+            background-size: contain;
+        }
+    }
+
+    &__title {
+        font-size: 1.4rem;
+        color: rgb(1, 13, 13);
+        font-family: "notoserif";
+        font-weight: 400;
+        padding: 0.5em 1.2em;
+
+        @include mobile-lg() {
+            font-size: 1.4rem;
+            color: rgb(1, 13, 13);
+            font-family: "notoserif";
+            font-weight: 400;
+            padding: 0.5em 1.2em;
+        }
+    }
+}
