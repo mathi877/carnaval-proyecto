@@ -6,7 +6,6 @@
     @include mobile-lg() {
         width: 870px;
         display: inline-block;
-        
         align-items: flex-start;
         padding: 20px;
     }
@@ -51,13 +50,13 @@
     width: 92vw;
 
     @include mobile-lg() {
-        width: 50vw;
+        width: 500vw;
     }
 }
 
 .main {
     @include mobile-lg() {
-        width: 1000px;
+        width: 1000px ;
     }
 }
 

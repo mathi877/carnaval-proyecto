@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Ultra&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <title>Categoria - Parodistas</title>
 </head>
 
@@ -101,7 +101,7 @@
         </div>
 
         <section class="section-parodistas">
-
+            <div class="grilla">
             <h2 class="title-article">Parodistas</h2>
             <article class="article">
 
@@ -115,9 +115,10 @@
                     "sátira
                     a un hecho o suceso real, en tono jocoso".
                 </p>
-                <figure class="article-figure">
-                    <img class="article-img" src="../img/figaros-armonicos.jpg" alt="">
+                <figure class="article-figure-parodistas">
+                    <img class="article-img-parodistas" src="../img/figaros-armonicos.jpg" alt="">
                 </figure>
+            </div>
                 <p class="article-parrafo">
                     Esta categoría, que incorpora a figuras en general muy populares vinculadas a la actuación y a la
                     música, se
@@ -140,8 +141,8 @@
                     dotados de excelentes voces, que parodiaban canciones norteamericanas de moda de la epoca, uno de
                     los primeros conjuntos fue ''Parodistas del Chocolate''.
                 </p>
-                <figure class="article-figure">
-                    <img class="article-img" src="../img/losgabys.jpg" alt="">
+                <figure class="article-figure-parodistas">
+                    <img class="article-img-parodistas" src="../img/losgabys.jpg" alt="">
                 </figure>
                 <p class="article-parrafo">
                     En la epoca del 70 surgen grandes parodistas que revoluconaron la categoria perfeccionando mucho mas
@@ -151,109 +152,112 @@
                     Valentinos, Zingaros, etc. <br>
                     Este año 2023 la categoria contó con 5 parodistas (Aristophanes, Caballeros, Los Muchachos,
                     Momosapiens y Zingaros). </p>
-                <figure class="article-figure">
-                    <img class="article-img" src="../img/zingaros.jpg" alt="">
+                <figure class="article-figure-parodistas">
+                    <img class="article-img-parodistas" src="../img/zingaros.jpg" alt="">
                 </figure>
                 </p>
             </article>
         </section>
-  <section class="section-article">
-    <h2 class="title-article">Otras Categorias</h2>
-        <div id="carouselExampleCaptions" class="carousel slide">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <h4 class="title-carrusel">Humoristas</h4>
-                <img src="../img/segundocarrusel.jpg" class="d-block w-100" alt="Humoristas">
-                <div class="carousel-caption d-none d-md-block">
-                   <div class="texto-carrusel">
-                  <h5>Murgas</h5>
-                  
+        <section class="section-article">
+            <h2 class="title-article">Otras Categorias</h2>
+            <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
                 </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <h4 class="title-carrusel">Murgas</h4>
-                <img src="../img/murga-carruzel.jpg" class="d-block w-62" alt="Murgas">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Second slide label</h5>
-                  <p>Some representative placeholder content for the second slide.</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <h4></h4>
-                <img src="" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Third slide label</h5>
-                  <p>Some representative placeholder content for the third slide.</p>
-                </div>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="carrusel-categorias">
+                            <h4 class="title-carrusel">Humoristas</h4>
+                            <img src="../img/segundocarrusel.jpg" class="d-block w-100" alt="Humoristas">
+                            <div class="carousel-caption d-none d-md-block">
+                            </div>
+
+
+
+
+                            <div class="carousel-item">
+                                <div class="carrusel-categorias">
+                                    <h4 class="title-carrusel">Murgas</h4>
+                                    <img src="../img/murga-carruzel.jpg" class="d-block w-100" alt="Murgas">
+                                    <div class="carousel-caption d-none d-md-block">
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <h4></h4>
+                                <img src="" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Third slide label</h5>
+                                    <p>Some representative placeholder content for the third slide.</p>
+                                </div>
+                            </div>
+
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
         </section>
 
 
 
 
-       
+
 
     </main>
     <div class="contenedor-footer">
         <footer class="footer">
-            
+
             <div class="contenedor-title">
                 <h2 class="footer-title">Amor de Carnaval</h2>
             </div>
             <div class="contenedor-contactos">
-                <h3 class="title-iconos">Siguenos</h3>
-                <ul class="iconos-footer">
-                    <a class="iconos" href="#" target="_blank"><i
-                            class="bi bi-facebook"></i></a>
-                    <a class="iconos" href="#" target="_blank"><i
-                            class="bi bi-instagram"></i></a>
-                    <a class="iconos" href="#" target="_blank"><i
-                            class="bi bi-twitter"></i></a>
+                <h3 class="iconos-title">Siguenos</h3>
+                <ul class="iconos-container">
+                    <a class="iconos" href="#" target="_blank"><i class="bi bi-facebook"></i></a>
+                    <a class="iconos" href="#" target="_blank"><i class="bi bi-instagram"></i></a>
+                    <a class="iconos" href="#" target="_blank"><i class="bi bi-twitter"></i></a>
                     <a class="iconos" href="#" target="_blank
                  "><i class="bi bi-linkedin"></i></a>
                 </ul>
             </div>
-            <div class="contenedor-maps">
-            <h3 class="title-maps-footer">Teatro de Verano</h3>
-            <h4 class="title-maps-footer">"Ramón Collazo"</h4>
-            <figure class="padre-mapa-footer">
-                <iframe class="mapa-footer"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3271.4660750288854!2d-56.171914184228946!3d-34.91984628180132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f819821d1de0f%3A0xb2823d7887f5540a!2sTeatro%20de%20Verano%20Ram%C3%B3n%20Collazo!5e0!3m2!1ses-419!2suy!4v1678466140621!5m2!1ses-419!2suy"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </figure>
-        </div>
+            <div class="mapa-contenedor">
+                <h3 class="mapa-title">Teatro de Verano</h3>
+                <h4 class="mapa-title">"Ramón Collazo"</h4>
+                <figure class="mapa-padre">
+                    <iframe class="mapa"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3271.4660750288854!2d-56.171914184228946!3d-34.91984628180132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f819821d1de0f%3A0xb2823d7887f5540a!2sTeatro%20de%20Verano%20Ram%C3%B3n%20Collazo!5e0!3m2!1ses-419!2suy!4v1678466140621!5m2!1ses-419!2suy"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </figure>
+            </div>
     </div>
-    
-            <div class="separador-footer">
-            <hr class="linea-footer">
-            
-                <ul class="contact-footer">
-                    <li><a class="lista-footer" href="">Contacto</a></li>
-                    <li><a class="lista-footer" href="">Politicas de privacidad</a></li>
-                    <li><a class="lista-footer" href="">Terminos y condiciones</a></li>
-    
-                </ul>
-            </div> 
-    
-    
-        </footer>
+
+    <div class="linea-padre-footer">
+        <hr class="linea-footer">
+
+        <ul class="contacto-footer">
+            <li><a class="lista-footer" href="">Contacto</a></li>
+            <li><a class="lista-footer" href="">Politicas de privacidad</a></li>
+            <li><a class="lista-footer" href="">Terminos y condiciones</a></li>
+
+        </ul>
+    </div>
+
+
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 

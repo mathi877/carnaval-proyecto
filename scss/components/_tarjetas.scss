@@ -11,7 +11,9 @@
         justify-content: center;
         flex-direction: column;
         text-align: center;
-        width: 300px;
+        width: 280px;
+        margin: 0;
+        
     }
 }
 
@@ -69,7 +71,7 @@
         background-size: contain;
 
         @include mobile-lg() {
-            width: 21.7vw;
+            width: 290px;
             height: 30vh;
             background-size: contain;
         }
@@ -81,8 +83,8 @@
         background-size: contain;
 
         @include mobile-lg() {
-            width: 21.7vw;
-            height: 27vh;
+            width: 269px;
+            height: 29vh;
             background-size: contain;
         }
     }

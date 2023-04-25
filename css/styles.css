@@ -45,6 +45,14 @@ body {
   background-color: rgba(0, 0, 0, 0.645);
 }
 
+@media (min-width: 576px) {
+  .section-parodistas {
+    display: grid;
+    grid-template-columns: 50% 300px;
+    grid-template-rows: repeat(3, 250px);
+  }
+}
+
 .carousel-inner {
   height: 250px;
 }
@@ -64,10 +72,39 @@ body {
   }
 }
 
+.carrusel-categorias {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title-carrusel {
+  color: white;
+}
+
 .section-article {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media (min-width: 576px) {
+  .section-article {
+    width: 870px;
+    display: inline-block;
+    align-items: flex-start;
+    padding: 20px;
+  }
+}
+
+.title-article {
+  color: white;
+  font-family: "notoserif";
+  font-weight: 600;
+  font-size: 1.7rem;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
 }
 
 .article-parrafo {
@@ -85,9 +122,25 @@ body {
 .article-img {
   width: 92vw;
 }
+@media (min-width: 576px) {
+  .article-img {
+    width: 50vw;
+  }
+}
 
 .article-video {
   width: 92vw;
+}
+@media (min-width: 576px) {
+  .article-video {
+    width: 500vw;
+  }
+}
+
+@media (min-width: 576px) {
+  .main {
+    width: 1000px;
+  }
 }
 
 .article-aside {
@@ -104,7 +157,8 @@ body {
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    width: 300px;
+    width: 280px;
+    margin: 0;
   }
 }
 
@@ -165,7 +219,7 @@ body {
 }
 @media (min-width: 576px) {
   .tarjeta__img {
-    width: 21.7vw;
+    width: 290px;
     height: 30vh;
     background-size: contain;
   }
@@ -177,8 +231,8 @@ body {
 }
 @media (min-width: 576px) {
   .tarjeta__img2 {
-    width: 21.7vw;
-    height: 27vh;
+    width: 269px;
+    height: 29vh;
     background-size: contain;
   }
 }
@@ -369,7 +423,7 @@ body {
     display: inline-block;
     width: 110px;
     height: 400px;
-    float: right;
+    
   }
 }
 

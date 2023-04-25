@@ -3,9 +3,12 @@
 
     @include mobile-lg() {
         height: 60vh;
+        
         justify-content: center;
         object-fit: cover;
     }
+
+   
 }
 
 .carousel {
@@ -13,8 +16,24 @@
         border: 150px solid rgb(0, 0, 0);
         border-bottom: none;
         border-top: none;
+        
+        
+        
     }
    
 
 }
+
+.carrusel-categorias {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.title-carrusel {
+    color: $color-text;
+}
+
 
