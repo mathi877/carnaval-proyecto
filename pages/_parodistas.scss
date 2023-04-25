@@ -1,7 +1,7 @@
 .grilla {
     @include mobile-lg {
         display: grid;
-        grid-template-columns:10% 300px;
-        grid-template-rows: repeat(3, 250px);
+        grid-template-columns:50% 300px;
+       
     }
 }
