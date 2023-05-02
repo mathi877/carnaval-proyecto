@@ -769,7 +769,15 @@ aside {
 .tarjeta-contacto-padre {
   display: flex;
   justify-content: center;
+  align-items: center;
   padding-bottom: 20px;
+  flex-direction: column;
+  gap: 20px;
+}
+@media (min-width: 1024px) {
+  .tarjeta-contacto-padre {
+    flex-direction: row;
+  }
 }
 
 .tarjeta-contacto {
@@ -781,7 +789,7 @@ aside {
   padding-bottom: 25px;
   color: white;
   background: linear-gradient(to bottom left, rgb(29, 4, 138), rgb(35, 190, 237));
-  width: 90vw;
+  max-width: 90vw;
   gap: 10px;
   border-radius: 10px;
   border: 2px solid black;
@@ -789,11 +797,11 @@ aside {
   animation-duration: 2s;
   animation-iteration-count: 1;
 }
-
-.tarjeta-contacto-padre2 {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 20px;
+@media (min-width: 1024px) {
+  .tarjeta-contacto {
+    height: 624px;
+    gap: 40px;
+  }
 }
 
 .tarjeta-contacto2 {
@@ -805,12 +813,17 @@ aside {
   padding-bottom: 25px;
   color: white;
   background: linear-gradient(to bottom left, rgb(29, 4, 138), rgb(35, 190, 237));
-  width: 92vw;
+  max-width: 90vw;
   border-radius: 10px;
   border: 2px solid black;
   animation-name: caja-contacto;
   animation-duration: 2s;
   animation-iteration-count: 1;
+}
+@media (min-width: 576px) {
+  .tarjeta-contacto2 {
+    max-width: 45vw;
+  }
 }
 
 .title-contacto {
@@ -838,15 +851,16 @@ aside {
 
 .input-form {
   display: flex;
-  flex-direction: row;
-  align-items: end;
+  flex-flow: row wrap;
+  align-items: center;
   font-size: 1rem;
   padding-bottom: 5px;
+  margin: 0;
 }
 
 .input-form2 {
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
   align-items: center;
   font-size: 1rem;
   padding-bottom: 5px;
@@ -855,18 +869,6 @@ aside {
 input {
   width: 40vw;
   height: 2.8vh;
-}
-
-.input-location {
-  margin-left: 70px;
-}
-
-.input-name {
-  margin-left: 2.5px;
-}
-
-.input-cel {
-  margin-left: 21px;
 }
 
 .radio-padre {
@@ -900,6 +902,16 @@ input {
   display: flex;
   justify-content: center;
   padding-top: 18px;
+}
+
+.text-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+textarea {
+  max-width: 75vw;
 }
 
 /*# sourceMappingURL=styles.css.map */
