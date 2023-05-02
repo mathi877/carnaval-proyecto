@@ -805,8 +805,7 @@ aside {
   padding-bottom: 25px;
   color: white;
   background: linear-gradient(to bottom left, rgb(29, 4, 138), rgb(35, 190, 237));
-  width: 90vw;
-  gap: 10px;
+  width: 92vw;
   border-radius: 10px;
   border: 2px solid black;
   animation-name: caja-contacto;
@@ -835,6 +834,72 @@ aside {
 
 .datos-items:hover {
   color: rgb(18, 18, 225);
+}
+
+.input-form {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  font-size: 1rem;
+  padding-bottom: 5px;
+}
+
+.input-form2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 1rem;
+  padding-bottom: 5px;
+}
+
+input {
+  width: 40vw;
+  height: 2.8vh;
+}
+
+.input-location {
+  margin-left: 70px;
+}
+
+.input-name {
+  margin-left: 2.5px;
+}
+
+.input-cel {
+  margin-left: 21px;
+}
+
+.radio-padre {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.radio {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+}
+
+.input-submit {
+  color: white;
+  background: radial-gradient(rgb(84, 2, 2), black);
+  width: 100px;
+  height: 30px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.input-submit:hover {
+  background: radial-gradient(rgb(29, 4, 138), rgb(35, 190, 237));
+}
+
+.submit-padre {
+  display: flex;
+  justify-content: center;
+  padding-top: 18px;
 }
 
 /*# sourceMappingURL=styles.css.map */
