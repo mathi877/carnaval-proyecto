@@ -29,6 +29,7 @@ body {
     font-family: "notoserif";
     font-weight: 500;
     background-color: #530110f5;
+    width: 100vw;
 }
 
 
@@ -38,8 +39,14 @@ body {
     align-items: $align;
 }
 
-@mixin mobile-lg {
+@mixin mobile-mg {
     @media (min-width: 576px) {
+        @content;
+    }
+}
+
+@mixin mobile-lg {
+    @media (min-width: 1024px) {
         @content;
     }
 }

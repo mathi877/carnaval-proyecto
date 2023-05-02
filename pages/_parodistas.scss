@@ -1,7 +1,0 @@
-.grilla {
-    @include mobile-lg {
-        display: grid;
-        grid-template-columns:50% 300px;
-       
-    }
-}

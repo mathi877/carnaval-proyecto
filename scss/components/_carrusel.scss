@@ -1,6 +1,11 @@
 .carousel-inner {
     height: 250px;
 
+    @include mobile-mg {
+        height: 250px;
+
+    }
+
     @include mobile-lg() {
         height: 60vh;
         
@@ -12,6 +17,13 @@
 }
 
 .carousel {
+
+    @include mobile-mg {
+        border: 90px solid rgb(0, 0, 0);
+        border-bottom: none;
+        border-top: none;
+    }
+
     @include mobile-lg() {
         border: 150px solid rgb(0, 0, 0);
         border-bottom: none;

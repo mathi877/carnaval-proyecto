@@ -32,6 +32,7 @@
 }
 
 .contenedor-footer {
+
     @include mobile-lg() {
         width: 100vw;
     }

@@ -3,11 +3,18 @@
     flex-direction: column;
     align-items: center;
 
+    @include mobile-mg {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+    }
+
     @include mobile-lg() {
-        width: 870px;
+        width: 72.9vw;
         display: inline-block;
         align-items: flex-start;
-        padding: 20px;
+        padding: 18px 0px 20px 20px;
     }
 }
 
@@ -16,9 +23,11 @@
     font-family: "notoserif";
     font-weight: 600;
     font-size: 1.7rem;
-    padding: 10px;
+    padding: 20px;
+    padding-bottom: 25px;
     display: flex;
     justify-content: center;
+    margin: 0;
 }
 
 
@@ -27,6 +36,7 @@
     padding: 1px 15px;
     color: white;
     font-weight: 300;
+    padding-bottom: 20px;
 }
 
 .article-figure {
@@ -40,31 +50,33 @@
     width: 92vw;
 
     @include mobile-lg() {
-        width: 50vw;
+        width: 67.9vw;
+        padding-bottom: 20px;
     }
 
 
 }
+
 
 .article-video {
     width: 92vw;
 
     @include mobile-lg() {
-        width: 500vw;
+        width: 50vw;
+        padding-bottom: 20px;
     }
 }
 
 .main {
+
+    @include mobile-mg {
+        width: 600px;
+
+
+
+    }
+
     @include mobile-lg() {
-        width: 1000px ;
+        width: 100vw;
     }
 }
-
-
-
-
-
-
-
-
-
