@@ -46,6 +46,39 @@ body {
   background-color: rgba(0, 0, 0, 0.645);
 }
 
+@media (min-width: 1024px) {
+  .section-parodistas {
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 100px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .parrafo-img {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: start;
+    gap: 20px;
+    padding-bottom: 30px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .article-parrafo {
+    width: 50vw;
+  }
+}
+
+@media (min-width: 1024px) {
+  .article-img-parodistas {
+    max-width: 500px;
+  }
+}
+
 .carousel-inner {
   height: 250px;
 }
@@ -912,6 +945,39 @@ input {
 
 textarea {
   max-width: 75vw;
+}
+
+@media (min-width: 1024px) {
+  .section-murgas {
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 100px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .parrafo-img {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: start;
+    gap: 20px;
+    padding-bottom: 30px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .article-parrafo {
+    width: 50vw;
+  }
+}
+
+@media (min-width: 1024px) {
+  .article-img-murgas {
+    max-width: 500px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

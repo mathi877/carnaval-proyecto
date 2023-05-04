@@ -1,0 +1,37 @@
+.section-parodistas {
+    @include mobile-lg {
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-left: 100px;
+    }
+}
+
+.parrafo-img {
+
+    @include mobile-lg {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: start;
+        gap: 20px;
+        padding-bottom: 30px;
+    }
+
+
+}
+
+.article-parrafo {
+    @include mobile-lg {
+        width: 50vw;
+        
+    }
+}
+
+.article-img-parodistas {
+    @include mobile-lg {
+           max-width: 500px;
+           
+    }
+}
