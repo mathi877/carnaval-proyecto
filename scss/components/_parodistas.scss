@@ -1,4 +1,15 @@
 .section-parodistas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include mobile-mg {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+    }
+
     @include mobile-lg {
         width: 90vw;
         display: flex;
@@ -22,7 +33,13 @@
 
 }
 
-.article-parrafo {
+.article-parrafo-parodistas {
+    text-align: justify;
+    padding: 1px 15px;
+    color: white;
+    font-weight: 300;
+    padding-bottom: 20px;
+
     @include mobile-lg {
         width: 50vw;
         
@@ -30,8 +47,10 @@
 }
 
 .article-img-parodistas {
+    width: 92vw;
     @include mobile-lg {
            max-width: 500px;
            
     }
 }
+

@@ -22,7 +22,13 @@
 
 }
 
-.article-parrafo {
+.article-parrafo-murgas {
+    text-align: justify;
+    padding: 1px 15px;
+    color: white;
+    font-weight: 300;
+    padding-bottom: 20px;
+
     @include mobile-lg {
         width: 50vw;
         
@@ -30,6 +36,7 @@
 }
 
 .article-img-murgas {
+    width: 92vw;
     @include mobile-lg {
            max-width: 500px;
            

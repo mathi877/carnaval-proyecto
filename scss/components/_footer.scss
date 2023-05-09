@@ -103,6 +103,10 @@
     width: 60vw;
     height: 20vh;
 
+    @include mobile-mg {
+        width: 350px;
+    }
+
     @include mobile-lg {
         width: 20vw;
     }
