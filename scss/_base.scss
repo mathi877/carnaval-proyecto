@@ -28,7 +28,7 @@ ol {
 body {
     font-family: "notoserif";
     font-weight: 500;
-    background-color: #530110f5;
+    background: linear-gradient(to right, $color-primario 0% 60%, $color-fondo);
     width: 100vw;
 }
 

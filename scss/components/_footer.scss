@@ -25,7 +25,7 @@
             font-family: "ultra";
             font-size: 1.5rem;
             text-align: left;
-            color: white;
+            color: $color-text;
             font-weight: 100;
         }
     }
@@ -58,7 +58,7 @@
         align-items: center;
         flex-direction: column;
         padding-bottom: 10px;
-        color: white;
+        color: $color-text;
     }
 }
 
@@ -149,7 +149,7 @@
     gap: 15px;
 
     @include mobile-lg {
-        background-color: black;
+        background-color: $color-fondo;
         flex-direction: row;
         gap: 30px;
         padding-left: 15px;

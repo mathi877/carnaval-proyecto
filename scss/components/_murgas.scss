@@ -9,7 +9,7 @@
     }
 }
 
-.parrafo-img {
+.parrafo-img-murgas {
 
     @include mobile-lg {
         display: flex;
@@ -22,10 +22,11 @@
 
 }
 
-.article-parrafo-murgas {
+
+.parrafo-murgas {
     text-align: justify;
     padding: 1px 15px;
-    color: white;
+    color: $color-text;
     font-weight: 300;
     padding-bottom: 20px;
 
@@ -35,7 +36,42 @@
     }
 }
 
-.article-img-murgas {
+.img-murgas {
+    width: 92vw;
+    @include mobile-lg {
+           max-width: 500px;
+           
+    }
+}
+
+.segundo-parrafo-img-murgas {
+
+    @include mobile-lg {
+        display: flex;
+        flex-flow: row-reverse nowrap;
+        align-items: start;
+        gap: 20px;
+        padding-bottom: 30px;
+        padding-left: 25px;
+    }
+
+
+}
+
+.segundo-parrafo-murgas {
+    text-align: justify;
+    padding: 1px 15px;
+    color: $color-text;
+    font-weight: 300;
+    padding-bottom: 20px;
+
+    @include mobile-lg {
+        width: 50vw;
+        
+    }
+}
+
+.segundo-img-murgas {
     width: 92vw;
     @include mobile-lg {
            max-width: 500px;

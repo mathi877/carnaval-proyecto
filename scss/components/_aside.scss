@@ -7,8 +7,6 @@ aside {
     justify-content: center;
 
     @include mobile-mg {
-        display: flex;
-        flex-direction: column;
         width: 100vw;
 
     }

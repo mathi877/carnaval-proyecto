@@ -1,25 +1,32 @@
-
 .header {
-    @include flex-box(space-between, center);
-    background-color: $color-fondo;
-    padding: 10px;
+  @include flex-box(space-between, center);
+  background-color: $color-fondo;
+  padding: 10px;
 
   &-title {
     font-family: "ultra";
     font-size: 1.3rem;
     text-align: left;
-    color: white;
     font-weight: 100;
-     }
+    color: $color-text;
+  }
 
-   &-form {
+  &-title a {
+    text-decoration: none;
+    box-shadow: none;
+    color: $color-text;
+  }
+
+  &-form {
     display: none;
-   }  
+  }
+}
+
+.offcanvas-title {
+  font-size: 1.4rem;
 }
 
 .offcanvas-header {
-    background-color: rgba(0, 0, 0, 0.645);
+  background-color: rgba(0, 0, 0, 0.645);
 }
-
-
 

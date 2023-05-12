@@ -31,18 +31,18 @@
     padding-right: 20px;
     padding-bottom: 25px;
     color: $color-text;
-    background: linear-gradient(to bottom left, rgb(29, 4, 138), rgb(35, 190, 237));
+    background: linear-gradient(to bottom left, #023047, #219ebc);
     max-width: 90vw;
     gap: 10px;
     border-radius: 10px;
-    border: 2px solid black;
+    border: 2px solid $color-fondo;
     animation-name: caja-contacto;
     animation-duration: 2s;
     animation-iteration-count: 1;
    
     @include mobile-lg{
         height: 670px;
-        gap: 40px;
+        gap: 60px;
     }
     
     
@@ -58,7 +58,7 @@
     padding-right: 20px;
     padding-bottom: 25px;
     color: $color-text;
-    background: linear-gradient(to bottom left, rgb(29, 4, 138), rgb(35, 190, 237));
+    background: linear-gradient(to bottom left, #023047, #219ebc);
     width: 90vw;
     max-width: 370px;
     border-radius: 10px;
@@ -158,16 +158,16 @@ input {
 }
 
 .input-submit {
-      color: white;
-     background: radial-gradient(rgb(84, 2, 2), black) ;
+      color: $color-text;
+     background: radial-gradient($color-primario, $color-fondo) ;
      width: 100px;
      height: 30px;
-     border: 2px solid black;
+     border: 2px solid $color-fondo;
      border-radius: 10px;
 }
 
 .input-submit:hover {
-          background: radial-gradient( rgb(29, 4, 138), rgb(35, 190, 237)); 
+          background: radial-gradient( #023047, #219ebc); 
 }
 
 .submit-padre {

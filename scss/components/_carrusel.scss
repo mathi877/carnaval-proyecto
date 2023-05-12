@@ -8,10 +8,10 @@
     }
 
     @include mobile-lg() {
-        height: 60vh;
+        height: 430px;
         
         justify-content: center;
-        object-fit: cover;
+        
     }
 
    
@@ -22,15 +22,16 @@
 .carousel {
 
     @include mobile-mg {
-        border: 90px solid rgb(0, 0, 0);
+        border: 80px solid $color-fondo;
         border-bottom: none;
         border-top: none;
     }
 
     @include mobile-lg() {
-        border: 150px solid rgb(0, 0, 0);
+        border: 150px solid $color-fondo;
         border-bottom: none;
         border-top: none;
+        
         
         
         
@@ -39,16 +40,87 @@
 
 }
 
-.carrusel-categorias {
+.d-block {
+    @include mobile-mg {
+        height: 270px;
+        object-fit: cover;
+    }
+
+    @include mobile-lg {
+        height: 430px;
+    }
+}
+
+.section-segundo-carousel {
     display: flex;
-    justify-content: center;
     flex-direction: column;
     align-items: center;
-
+    width: 100vw;
 }
 
-.title-carrusel {
+.segundo-carousel {
+    display: flex;
+    overflow-y: auto;
+    padding-bottom: 20px;
+    width: 97vw;
+    gap: 80%;
+
+    @include mobile-lg {
+        gap: 720px;
+    }
+}
+
+.card {
+    position: relative;
+    
+}
+
+.card img {
+    width: 70vw;
+    object-fit: cover;
+    height: 330px;
+    border: 2px solid $color-fondo;
+    border-radius: 10px;
+
+    @include mobile-lg {
+        width: 700px;
+    }
+}
+
+.cuerpo-card {
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 70vw;
     color: $color-text;
+    border-radius: 10px;
+    overflow: hidden;
+
+    @include mobile-mg {
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.7) , rgba(0, 0, 0, 0.012) 70% 100%);
+    }
+
+    @include mobile-lg {
+        width: 700px;
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.7) , rgba(0, 0, 0, 0.012) 70% 100%);
+    }
 }
+
+.cuerpo-card h3 a  {
+      color: $color-text;
+      
+}
+
+.cuerpo-card h3 a:hover  {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+}
+
+
+.cuerpo-card h3 {
+    margin: 0;
+}
+
 
 

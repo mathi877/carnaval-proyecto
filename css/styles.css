@@ -20,7 +20,7 @@ ol {
 body {
   font-family: "notoserif";
   font-weight: 500;
-  background-color: rgba(83, 1, 16, 0.9607843137);
+  background: linear-gradient(to right, rgba(83, 1, 16, 0.9607843137) 0% 60%, black);
   width: 100vw;
 }
 
@@ -35,11 +35,20 @@ body {
   font-family: "ultra";
   font-size: 1.3rem;
   text-align: left;
-  color: white;
   font-weight: 100;
+  color: white;
+}
+.header-title a {
+  text-decoration: none;
+  box-shadow: none;
+  color: white;
 }
 .header-form {
   display: none;
+}
+
+.offcanvas-title {
+  font-size: 1.4rem;
 }
 
 .offcanvas-header {
@@ -61,12 +70,14 @@ body {
 }
 @media (min-width: 1024px) {
   .section-parodistas {
-    width: 90vw;
+    width: 92.5vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding-left: 100px;
+    align-self: center;
+    padding-bottom: 10px;
   }
 }
 
@@ -75,12 +86,12 @@ body {
     display: flex;
     flex-flow: row nowrap;
     align-items: start;
+    padding-bottom: 40px;
     gap: 20px;
-    padding-bottom: 30px;
   }
 }
 
-.article-parrafo-parodistas {
+.parrafo-parodistas {
   text-align: justify;
   padding: 1px 15px;
   color: white;
@@ -88,16 +99,50 @@ body {
   padding-bottom: 20px;
 }
 @media (min-width: 1024px) {
-  .article-parrafo-parodistas {
+  .parrafo-parodistas {
     width: 50vw;
   }
 }
 
-.article-img-parodistas {
+.img-parodistas {
   width: 92vw;
 }
 @media (min-width: 1024px) {
-  .article-img-parodistas {
+  .img-parodistas {
+    max-width: 500px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .segundo-parrafo-img {
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    align-items: start;
+    gap: 20px;
+    padding: 15px;
+    padding-bottom: 40px;
+  }
+}
+
+.segundo-parrafo-parodistas {
+  text-align: justify;
+  padding: 1px 15px;
+  color: white;
+  font-weight: 300;
+  padding-bottom: 20px;
+}
+@media (min-width: 1024px) {
+  .segundo-parrafo-parodistas {
+    width: 50vw;
+    padding-left: 15px;
+  }
+}
+
+.segundo-img-parodistas {
+  width: 92vw;
+}
+@media (min-width: 1024px) {
+  .segundo-img-parodistas {
     max-width: 500px;
   }
 }
@@ -113,36 +158,108 @@ body {
 }
 @media (min-width: 1024px) {
   .carousel-inner {
-    height: 60vh;
+    height: 430px;
     justify-content: center;
-    object-fit: cover;
   }
 }
 
 @media (min-width: 576px) {
   .carousel {
-    border: 90px solid rgb(0, 0, 0);
+    border: 80px solid black;
     border-bottom: none;
     border-top: none;
   }
 }
 @media (min-width: 1024px) {
   .carousel {
-    border: 150px solid rgb(0, 0, 0);
+    border: 150px solid black;
     border-bottom: none;
     border-top: none;
   }
 }
 
-.carrusel-categorias {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
+@media (min-width: 576px) {
+  .d-block {
+    height: 270px;
+    object-fit: cover;
+  }
+}
+@media (min-width: 1024px) {
+  .d-block {
+    height: 430px;
+  }
 }
 
-.title-carrusel {
+.section-segundo-carousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+}
+
+.segundo-carousel {
+  display: flex;
+  overflow-y: auto;
+  padding-bottom: 20px;
+  width: 97vw;
+  gap: 80%;
+}
+@media (min-width: 1024px) {
+  .segundo-carousel {
+    gap: 720px;
+  }
+}
+
+.card {
+  position: relative;
+}
+
+.card img {
+  width: 70vw;
+  object-fit: cover;
+  height: 330px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+@media (min-width: 1024px) {
+  .card img {
+    width: 700px;
+  }
+}
+
+.cuerpo-card {
+  position: absolute;
+  bottom: 0;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 70vw;
   color: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+@media (min-width: 576px) {
+  .cuerpo-card {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.012) 70% 100%);
+  }
+}
+@media (min-width: 1024px) {
+  .cuerpo-card {
+    width: 700px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.012) 70% 100%);
+  }
+}
+
+.cuerpo-card h3 a {
+  color: white;
+}
+
+.cuerpo-card h3 a:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+}
+
+.cuerpo-card h3 {
+  margin: 0;
 }
 
 .nav-link:hover {
@@ -238,20 +355,6 @@ body {
 }
 @media (min-width: 576px) {
   .article-aside {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    padding: 0;
-  }
-}
-@media (min-width: 1024px) {
-  .article-aside {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    margin: 0;
     padding: 0;
   }
 }
@@ -264,9 +367,6 @@ body {
 }
 @media (min-width: 576px) {
   .article-tarjeta {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-flow: row wrap;
     gap: 20px;
   }
@@ -285,28 +385,13 @@ body {
 }
 @media (min-width: 576px) {
   .title-aside {
-    color: white;
-    font-family: "notoserif";
-    font-weight: 600;
-    font-size: 1.7rem;
-    padding-top: 0.6em;
-    padding-bottom: 0.7em;
-    width: 300px;
-    line-height: 37px;
-    align-self: center;
     flex-direction: column;
   }
 }
 @media (min-width: 1024px) {
   .title-aside {
-    color: white;
-    font-family: "notoserif";
-    font-weight: 600;
-    font-size: 1.7rem;
-    padding-top: 0.6em;
     padding-bottom: 0.9em;
     width: 20vw;
-    line-height: 37px;
     margin: 0;
   }
 }
@@ -321,90 +406,45 @@ body {
   overflow: hidden;
   margin-bottom: 20px;
   align-self: center;
-  background-color: rgb(175, 172, 163);
-}
-@media (min-width: 576px) {
-  .tarjeta {
-    display: flex;
-    flex-direction: column;
-    height: 340px;
-    width: 230px;
-    border: 2px solid black;
-    border-radius: 10px;
-    overflow: hidden;
-    margin-bottom: 20px;
-    align-self: center;
-    background-color: rgb(175, 172, 163);
-  }
-}
-@media (min-width: 1024px) {
-  .tarjeta {
-    display: flex;
-    flex-direction: column;
-    height: 340px;
-    width: 230px;
-    border: 2px solid black;
-    border-radius: 10px;
-    overflow: hidden;
-    margin: 0;
-    background-color: rgb(175, 172, 163);
-  }
+  background: linear-gradient(to right, rgb(175, 172, 163) 0% 50%, black);
 }
 .tarjeta__img {
   width: 260px;
   height: 200px;
-  background-size: contain;
-}
-@media (min-width: 576px) {
-  .tarjeta__img {
-    width: 260px;
-    height: 200px;
-    background-size: contain;
-  }
-}
-@media (min-width: 1024px) {
-  .tarjeta__img {
-    width: 260px;
-    height: 200px;
-    background-size: contain;
-  }
+  object-fit: cover;
 }
 .tarjeta__img2 {
   width: 240px;
   height: 170px;
-  background-size: contain;
+  object-fit: cover;
 }
 @media (min-width: 576px) {
   .tarjeta__img2 {
     width: 230px;
     height: 190px;
-    background-size: contain;
   }
 }
 @media (min-width: 1024px) {
   .tarjeta__img2 {
     width: 240px;
     height: 170px;
-    background-size: contain;
   }
 }
 .tarjeta__img4 {
   width: 280px;
   height: 230px;
-  background-size: contain;
+  object-fit: cover;
 }
 @media (min-width: 576px) {
   .tarjeta__img4 {
     width: 280px;
     height: 240px;
-    background-size: contain;
   }
 }
 @media (min-width: 1024px) {
   .tarjeta__img4 {
     width: 290px;
     height: 240px;
-    background-size: contain;
   }
 }
 .tarjeta__title {
@@ -416,10 +456,6 @@ body {
 }
 @media (min-width: 1024px) {
   .tarjeta__title {
-    font-size: 1.4rem;
-    color: rgb(1, 13, 13);
-    font-family: "notoserif";
-    font-weight: 400;
     padding: 0.7em 1.2em;
   }
 }
@@ -432,19 +468,11 @@ body {
 }
 @media (min-width: 576px) {
   .tarjeta__title4 {
-    font-size: 1.4rem;
-    color: rgb(1, 13, 13);
-    font-family: "notoserif";
-    font-weight: 400;
     padding: 0.9em 1.2em;
   }
 }
 @media (min-width: 1024px) {
   .tarjeta__title4 {
-    font-size: 1.4rem;
-    color: rgb(1, 13, 13);
-    font-family: "notoserif";
-    font-weight: 400;
     padding: 0.5em 1.2em;
   }
 }
@@ -627,8 +655,6 @@ aside {
 }
 @media (min-width: 576px) {
   aside {
-    display: flex;
-    flex-direction: column;
     width: 100vw;
   }
 }
@@ -682,7 +708,7 @@ aside {
   align-self: center;
   background-color: rgb(175, 172, 163);
   animation-name: mover-tarjeta;
-  animation-duration: 0.5s;
+  animation-duration: 1s;
   animation-direction: alternate;
   animation-fill-mode: backwards;
 }
@@ -855,7 +881,7 @@ aside {
   padding-right: 20px;
   padding-bottom: 25px;
   color: white;
-  background: linear-gradient(to bottom left, rgb(29, 4, 138), rgb(35, 190, 237));
+  background: linear-gradient(to bottom left, #023047, #219ebc);
   max-width: 90vw;
   gap: 10px;
   border-radius: 10px;
@@ -867,7 +893,7 @@ aside {
 @media (min-width: 1024px) {
   .tarjeta-contacto {
     height: 670px;
-    gap: 40px;
+    gap: 60px;
   }
 }
 
@@ -879,7 +905,7 @@ aside {
   padding-right: 20px;
   padding-bottom: 25px;
   color: white;
-  background: linear-gradient(to bottom left, rgb(29, 4, 138), rgb(35, 190, 237));
+  background: linear-gradient(to bottom left, #023047, #219ebc);
   width: 90vw;
   max-width: 370px;
   border-radius: 10px;
@@ -961,7 +987,7 @@ input {
 
 .input-submit {
   color: white;
-  background: radial-gradient(rgb(84, 2, 2), black);
+  background: radial-gradient(rgba(83, 1, 16, 0.9607843137), black);
   width: 100px;
   height: 30px;
   border: 2px solid black;
@@ -969,7 +995,7 @@ input {
 }
 
 .input-submit:hover {
-  background: radial-gradient(rgb(29, 4, 138), rgb(35, 190, 237));
+  background: radial-gradient(#023047, #219ebc);
 }
 
 .submit-padre {
@@ -1000,7 +1026,7 @@ textarea {
 }
 
 @media (min-width: 1024px) {
-  .parrafo-img {
+  .parrafo-img-murgas {
     display: flex;
     flex-flow: row nowrap;
     align-items: start;
@@ -1009,7 +1035,7 @@ textarea {
   }
 }
 
-.article-parrafo-murgas {
+.parrafo-murgas {
   text-align: justify;
   padding: 1px 15px;
   color: white;
@@ -1017,16 +1043,49 @@ textarea {
   padding-bottom: 20px;
 }
 @media (min-width: 1024px) {
-  .article-parrafo-murgas {
+  .parrafo-murgas {
     width: 50vw;
   }
 }
 
-.article-img-murgas {
+.img-murgas {
   width: 92vw;
 }
 @media (min-width: 1024px) {
-  .article-img-murgas {
+  .img-murgas {
+    max-width: 500px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .segundo-parrafo-img-murgas {
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    align-items: start;
+    gap: 20px;
+    padding-bottom: 30px;
+    padding-left: 25px;
+  }
+}
+
+.segundo-parrafo-murgas {
+  text-align: justify;
+  padding: 1px 15px;
+  color: white;
+  font-weight: 300;
+  padding-bottom: 20px;
+}
+@media (min-width: 1024px) {
+  .segundo-parrafo-murgas {
+    width: 50vw;
+  }
+}
+
+.segundo-img-murgas {
+  width: 92vw;
+}
+@media (min-width: 1024px) {
+  .segundo-img-murgas {
     max-width: 500px;
   }
 }
